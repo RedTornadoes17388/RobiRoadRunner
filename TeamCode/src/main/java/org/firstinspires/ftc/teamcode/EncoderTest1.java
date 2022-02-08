@@ -15,12 +15,12 @@ import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
  * encoder localizer heading may be significantly off if the track width has not been tuned).
  */
 @TeleOp(name="EncoderTest1", group="Linear Opmode")
-public class EncoderTest1 extends LinearOpMode {
+public class EncoderTest1 extends LinearOpMode { //robi needs help
     @Override
     public void runOpMode() throws InterruptedException {
         SampleMecanumDrive drive = new SampleMecanumDrive(hardwareMap);
 
-        drive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        drive.setn z4Mode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         waitForStart();
 
